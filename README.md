@@ -45,6 +45,17 @@ Browser  →  React UI  →  POST /api/run (proxy)  →  UPLIZD API  →  Meetin
 
 ---
 
+## Extension ideas
+
+Enhancements that preserve **browser → proxy → UPLIZD** and Composio-backed tools in the flow:
+
+- **Playbooks in `{rules}`** — e.g. “new inbound demo,” “customer renewal,” “no-show recovery” with fixed steps (Calendar → Gmail → HubSpot note).
+- **Timezone & buffers** — Text Input rules that state working hours, minimum notice, and meeting length so the model avoids invalid slots across Cal.com + Google Calendar.
+- **CRM-first routing** — HubSpot-enriched instructions: owner rotation, account tier, or “exec vs. AE” meeting types without altering this repo’s API surface.
+- **Audit trail** — Flow-side pattern to log confirmations (which tool wrote what) in Chat Output for support handoff.
+
+---
+
 ## Stack
 
 | Layer | Tech |
